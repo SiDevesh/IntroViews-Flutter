@@ -8,10 +8,10 @@ import 'package:intro_views_flutter/Animation_Gesture/page_dragger.dart';
 import 'package:intro_views_flutter/Animation_Gesture/page_reveal.dart';
 import 'package:intro_views_flutter/Constants/constants.dart';
 import 'package:intro_views_flutter/Models/page_view_model.dart';
-import 'package:intro_views_flutter/Models/pager_indicator_view_model.dart';
+// import 'package:intro_views_flutter/Models/pager_indicator_view_model.dart';
 import 'package:intro_views_flutter/Models/slide_update_model.dart';
 import 'package:intro_views_flutter/UI/page_indicator_buttons.dart';
-import 'package:intro_views_flutter/UI/pager_indicator.dart';
+// import 'package:intro_views_flutter/UI/pager_indicator.dart';
 import 'package:intro_views_flutter/UI/page.dart';
 
 /// This is the IntroViewsFlutter widget of app which is a stateful widget as its state is dynamic and updates asynchronously.
@@ -251,15 +251,15 @@ class _IntroViewsFlutterState extends State<IntroViewsFlutter>
                 columnMainAxisAlignment: widget.columnMainAxisAlignment),
           ), //PageReveal
 
-          PagerIndicator(
-            //bottom page indicator
-            viewModel: PagerIndicatorViewModel(
-              pages,
-              activePageIndex,
-              slideDirection,
-              slidePercent,
-            ),
-          ), //PagerIndicator
+          // PagerIndicator(
+          //   //bottom page indicator
+          //   viewModel: PagerIndicatorViewModel(
+          //     pages,
+          //     activePageIndex,
+          //     slideDirection,
+          //     slidePercent,
+          //   ),
+          // ), //PagerIndicator
 
           PageIndicatorButtons(
             //Skip and Done Buttons
