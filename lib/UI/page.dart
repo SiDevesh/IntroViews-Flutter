@@ -45,14 +45,14 @@ class Page extends StatelessWidget {
       mainAxisSize: MainAxisSize.max,
       children: <Widget>[
         Flexible(
-          flex: 1,
+          flex: 2,
           child: new _TitlePageTransform(
             percentVisible: percentVisible,
             pageViewModel: pageViewModel,
           ),
         ), //Transform
         Expanded(
-          flex: 4,
+          flex: 3,
           child: new _ImagePageTransform(
             percentVisible: percentVisible,
             pageViewModel: pageViewModel,
