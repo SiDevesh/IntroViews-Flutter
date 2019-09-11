@@ -41,7 +41,7 @@ class Page extends StatelessWidget {
   /// when device is Portrait place title, image and body in a column
   Widget _buildPortraitPage() {
     return new Column(
-      mainAxisAlignment: columnMainAxisAlignment,
+      mainAxisAlignment: MainAxisAlignment.center,
       mainAxisSize: MainAxisSize.max,
       children: <Widget>[
         Flexible(
@@ -52,7 +52,7 @@ class Page extends StatelessWidget {
           ),
         ), //Transform
         Expanded(
-          flex: 3,
+          flex: 5,
           child: new _ImagePageTransform(
             percentVisible: percentVisible,
             pageViewModel: pageViewModel,
